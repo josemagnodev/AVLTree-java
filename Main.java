@@ -12,19 +12,12 @@ public class Main {
         tree.root = tree.insert(tree.root, 40);
         tree.root = tree.insert(tree.root, 50);
         tree.root = tree.insert(tree.root, 25);
-
-        /*
-         * The constructed AVL Tree would be
-         * 30
-         * / \
-         * 20 40
-         * / \ \
-         * 10 25 50
-         */
-        // This code has been contributed by Mayank Jaiswal
+        tree.root = tree.insert(tree.root, 66);
+        tree.root = tree.insert(tree.root, 99);
+        tree.root = tree.insert(tree.root, 129);
 
         System.out.println("Preorder traversal" +
                 " of constructed tree is : ");
-        tree.preOrder(tree.root);
+        tree.inOrder(tree.root);
     }
 }
