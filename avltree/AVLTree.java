@@ -120,5 +120,12 @@ public class AVLTree {
                 preOrder(node.nodeRight);
             }
         }
+        public void inOrder(Node node){
+            if (node != null) {
+                preOrder(node.nodeLeft);
+                System.out.print(node.value + " ");
+                preOrder(node.nodeRight);
+            } 
+        }
 
     }
